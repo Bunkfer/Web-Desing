@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+//sizes
+@mixin breakpoint($bp){
+    @if $bp == tablet{
+        @media(min-width: $sm-viewport){
+            @content;
+        }
+    }
+
+    @if $bp == tablethorizontal{
+        @media(min-width: $md-viewport){
+            @content;
+        }
+    }
+
+    @if $bp == desktop{
+        @media(min-width: $lg-viewport){
+            @content;
+        }
+    }
+}
