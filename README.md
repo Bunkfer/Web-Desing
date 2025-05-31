@@ -28,7 +28,7 @@ Portfolio of web designs showcasing responsive and modern websites. Styling is d
 
 Explore git pages
 
-[web-desing](https://hub.docker.com/r/bunkfer/django)
+[web-desing](https://bunkfer.github.io/Web-Desing/)
 
 ---
 
