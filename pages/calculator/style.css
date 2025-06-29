@@ -1,0 +1,39 @@
+:root {
+    --font-size-root: 16px;
+    --color-gray: #403C39;
+    --color-melon: #F38160;
+}
+
+body {
+    background-color: black;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.marco {
+    width: 60%;
+}
+
+.solucion {
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    padding: 0 40px;
+}
+
+.oculto {
+    display: none;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,4 +1,14 @@
-.producto{
-    height: 250px;
+html {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+.product {
+    height: 200px;
     object-fit: contain;
 }

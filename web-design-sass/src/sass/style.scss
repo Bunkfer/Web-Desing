@@ -1,107 +1,107 @@
-@use "variables" as *;
+  @use "variables" as *;
 
-// Reset
-@use "normalize" as *;
-@use "base" as *;
-@use "mixins" as *;
-@use "sass:map";
+  // Reset
+  @use "normalize" as *;
+  @use "base" as *;
+  @use "mixins" as *;
+  @use "sass:map";
 
-body{
-    background-image: url(../img/design.png);
-    color: white;
-    width: 85%;
-    height: 90%;
-    margin: 0 auto;
-    margin-top: 2%;
-}
+  body{
+      background-image: url(../img/design.png);
+      color: white;
+      width: 85%;
+      height: 90%;
+      margin: 0 auto;
+      margin-top: 2%;
+  }
 
-.titulo{
-    text-align: center;
-    color: map.get(map.get($colors, "secondary"), "darkblue");
-    margin-bottom: 5%;
-    font-family: $font-family-popins;
-}
-
-.text{
-    text-align: center;
-    .head{
-        margin-top: 5%;
-        p{
-            margin-top: 5%;
-        }
-    }
-    h1{
-        color: map.get(map.get($colors, "primary"), "cyan");
-        font-family: $font-family-bebas;
-        font-size: 35px;
-    }
-    @include breakpoint(desktop){
-        h1{
-            color: map.get(map.get($colors, "primary"), "cyan");
-            font-family: $font-family-bebas;
-            font-size: 45px;
-        }
-    }
-}
-
-.cpu {
-    width: 60%; 
-    display: block;     
-    margin: 0 auto; 
-    @include breakpoint(tablethorizontal){
-        width: 50%;
-    }
-    @include breakpoint(desktop){
-        width: 30%;
-    }
-}
-
-.page {
-  margin-top: 2%;
-
-  div {
-    div {
-      border: 1px solid map.get(map.get($colors, "primary"), "cyan");
-      border-radius: 10px;
+  .titulo{
       text-align: center;
+      color: map.get(map.get($colors, "secondary"), "darkblue");
+      margin-bottom: 5%;
+      font-family: $font-family-popins;
+  }
 
-      transition: background-color 0.5s ease, box-shadow 0.3s ease;
-
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-
-        text-decoration: none;
-        color: inherit;
-
-        h2 {
-          color: map.get(map.get($colors, "primary"), "cyan");
-          margin: 0 0 0.5rem 0;
-          font-size: 22px;
-        }
-
-        p {
-          margin: 0;
-          color: map.get(map.get($colors, "primary"), "lime");
-        }
+  .text{
+      text-align: center;
+      .head{
+          margin-top: 5%;
+          p{
+              margin-top: 5%;
+          }
       }
+      h1{
+          color: map.get(map.get($colors, "primary"), "cyan");
+          font-family: $font-family-bebas;
+          font-size: 35px;
+      }
+      @include breakpoint(desktop){
+          h1{
+              color: map.get(map.get($colors, "primary"), "cyan");
+              font-family: $font-family-bebas;
+              font-size: 45px;
+          }
+      }
+  }
 
-      &:hover {
-        background-color: map.get(map.get($colors, "primary"), "cyan");
-        box-shadow: 0 4px 20px map.get(map.get($colors, "secondary"), "darkblue");
+  .cpu {
+      width: 60%; 
+      display: block;     
+      margin: 0 auto; 
+      @include breakpoint(tablethorizontal){
+          width: 50%;
+      }
+      @include breakpoint(desktop){
+          width: 30%;
+      }
+  }
+
+  .page {
+    margin-top: 2%;
+
+    div {
+      div {
+        border: 1px solid map.get(map.get($colors, "primary"), "cyan");
+        border-radius: 10px;
+        text-align: center;
+
+        transition: background-color 0.5s ease, box-shadow 0.3s ease;
 
         a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+
+          text-decoration: none;
+          color: inherit;
+
           h2 {
-            color: map.get(map.get($colors, "secondary"), "darkblue");
+            color: map.get(map.get($colors, "primary"), "cyan");
+            margin: 0 0 0.5rem 0;
+            font-size: 22px;
           }
+
           p {
-            color: #212529;
+            margin: 0;
+            color: map.get(map.get($colors, "primary"), "lime");
+          }
+        }
+
+        &:hover {
+          background-color: map.get(map.get($colors, "primary"), "cyan");
+          box-shadow: 0 4px 20px map.get(map.get($colors, "secondary"), "darkblue");
+
+          a {
+            h2 {
+              color: map.get(map.get($colors, "secondary"), "darkblue");
+            }
+            p {
+              color: #212529;
+            }
           }
         }
       }
     }
   }
-}
