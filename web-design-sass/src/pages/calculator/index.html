@@ -13,96 +13,39 @@
 <body>
   <h1 class="text-center my-4 fw-bold display-4 titulo"><a href="../../../index.html">Calculator</a></h1>
   <article class="container my-5 marco">
-    <div class="row">
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="M">
-        M
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="C">
-        C
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="ATRAS">
-        &larr;
-      </button>
-      <button type="button" class="btn btn-success col-6 col-md-3 col-lg-3" id="RUN">
-        run
-      </button>
-    </div>
+    <div class="calculadora-grid">
+      <button class="btn btn-secondary" id="M">M</button>
+      <button class="btn btn-secondary" id="C">C</button>
+      <button class="btn btn-secondary" id="ATRAS">&larr;</button>
+      <button class="btn btn-success" id="RUN">run</button>
 
-    <div class="row">
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="MR">
-        MR
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="MC">
-        MC
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="M+">
-        M+
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="M-">
-        M-
-      </button>
-    </div>
+      <button class="btn btn-secondary" id="MR">MR</button>
+      <button class="btn btn-secondary" id="MC">MC</button>
+      <button class="btn btn-secondary" id="M+">M+</button>
+      <button class="btn btn-secondary" id="M-">M-</button>
 
-    <div class="row">
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="7">
-        7
-      </button>
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="8">
-        8
-      </button>
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="9">
-        9
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3 num" id="+">
-        +
-      </button>
-    </div>
+      <button class="btn btn-dark num" id="num7">7</button>
+      <button class="btn btn-dark num" id="num8">8</button>
+      <button class="btn btn-dark num" id="num9">9</button>
+      <button class="btn btn-secondary num" id="opPlus">+</button>
 
-    <div class="row">
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="4">
-        4
-      </button>
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="5">
-        5
-      </button>
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="6">
-        6
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3 num" id="-">
-        -
-      </button>
-    </div>
+      <button class="btn btn-dark num" id="num4">4</button>
+      <button class="btn btn-dark num" id="num5">5</button>
+      <button class="btn btn-dark num" id="num6">6</button>
+      <button class="btn btn-secondary num" id="opMinus">-</button>
 
-    <div class="row">
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="1">
-        1
-      </button>
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="2">
-        2
-      </button>
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="3">
-        3
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3 num" id="*">
-        *
-      </button>
-    </div>
+      <button class="btn btn-dark num" id="num1">1</button>
+      <button class="btn btn-dark num" id="num2">2</button>
+      <button class="btn btn-dark num" id="num3">3</button>
+      <button class="btn btn-secondary num" id="opMul">*</button>
 
-    <div class="row">
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3 num" id=".">
-        .
-      </button>
-      <button type="button" class="btn btn-dark col-6 col-md-3 col-lg-3 num" id="0">
-        0
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3" id="MAS-MENOS">
-        +-
-      </button>
-      <button type="button" class="btn btn-secondary col-6 col-md-3 col-lg-3 num" id="/">
-        /
-      </button>
+      <button class="btn btn-secondary num" id="dot">.</button>
+      <button class="btn btn-dark num" id="num0">0</button>
+      <button class="btn btn-secondary" id="MAS-MENOS">+-</button>
+      <button class="btn btn-secondary num" id="opDivide">/</button>
     </div>
   </article>
+
 
   <div class="solucion" id="fin">
     <span>-</span>
@@ -111,6 +54,7 @@
   <div class="solucion final" id="consola">
     <ul class="lista"></ul>
   </div>
+
   <script src="script.js"></script>
 </body>
 

@@ -14,7 +14,9 @@ body {
 }
 
 .marco {
-    width: 60%;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
 }
 
 .solucion {
@@ -22,9 +24,9 @@ body {
     color: black;
     text-align: center;
     font-size: 2rem;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    width: 90%;
+    max-width: 520px;
+    margin: 0 auto 40px auto;
     border-radius: 20px;
     padding: 0 40px;
 }
@@ -36,4 +38,140 @@ body {
 h1 a {
     text-decoration: none;
     color: white;
+}
+
+.calculadora-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "M MR MC"
+        "MPLUS . MMINUS"
+        "C C ATRAS"
+        "num7 num8 num9"
+        "num4 num5 num6"
+        "num1 num2 num3"
+        "dot num0 MASMENOS"
+        "opPlus opMinus opMul"
+        ". opDivide ."
+        "RUN RUN RUN";
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+@media (min-width: 1100px) {
+    .calculadora-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "MR MC MPLUS MMINUS"
+            "M C ATRAS ATRAS"
+            "num7 num8 num9 opPlus"
+            "num4 num5 num6 opMinus"
+            "num1 num2 num3 opMul"
+            "dot num0 MASMENOS opDivide"
+            "RUN RUN RUN RUN";
+    }
+}
+
+/* Estilo general de botones */
+.calculadora-grid button {
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+/* Asignar las áreas a los botones */
+#M {
+    grid-area: M;
+}
+
+#C {
+    grid-area: C;
+}
+
+#ATRAS {
+    grid-area: ATRAS;
+}
+
+#RUN {
+    grid-area: RUN;
+}
+
+#MR {
+    grid-area: MR;
+}
+
+#MC {
+    grid-area: MC;
+}
+
+#M+ {
+    grid-area: MPLUS;
+}
+
+#M- {
+    grid-area: MMINUS;
+}
+
+#num0 {
+    grid-area: num0;
+}
+
+#num1 {
+    grid-area: num1;
+}
+
+#num2 {
+    grid-area: num2;
+}
+
+#num3 {
+    grid-area: num3;
+}
+
+#num4 {
+    grid-area: num4;
+}
+
+#num5 {
+    grid-area: num5;
+}
+
+#num6 {
+    grid-area: num6;
+}
+
+#num7 {
+    grid-area: num7;
+}
+
+#num8 {
+    grid-area: num8;
+}
+
+#num9 {
+    grid-area: num9;
+}
+
+#opPlus {
+    grid-area: opPlus;
+}
+
+#opMinus {
+    grid-area: opMinus;
+}
+
+#opMul {
+    grid-area: opMul;
+}
+
+#opDivide {
+    grid-area: opDivide;
+}
+
+#dot {
+    grid-area: dot;
+}
+
+#MAS-MENOS {
+    grid-area: MASMENOS;
 }
